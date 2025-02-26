@@ -1,0 +1,162 @@
+# This file contains the "translation" table. It is used to convert
+# the character typed immediately following C-q ("translate next charcater").
+
+#####################################
+# Hebrew Points
+#####################################
+
+# בחלק הראשון של קובץ זה, להלן, מפורטות ההתאמות בין המקשים (בהערות אלה
+# אני משתמש במונח "מקש" כשכוונתי לתו (character) העובר המרה --  אין
+# כוונתי למקש הפיזי (key)) לבין סימני הפיסוק העבריים.
+#
+# המקשים הם באנגלית, מכיוון שהתוכנה בודקת את ההתאמות הללו עוד לפני
+# שאמולציית המקלדת העברית נכנסת לפעולה. המשתמש אמור להתייחס לכיתוב העברי
+# שעל גבי המקשים: "s" למעשה פירושה האות "ד" (של "דגש").
+#
+# כללים:
+#
+# 1. האות הראשונה בשם הסימן לרוב היא המקש; למשל, "סגול" - האות היא "ס",
+# ואות זו יושבת על המקש "x". יש כמה יוצאים מן הכלל: "חיריק", שלו מתאים
+# המקש "י" (זאת עשיתי כדי שהמקש "ח" יפיק "חולם"); "קובוץ", שלו מתאים "ו"
+# (זכור! שורוק הוא למעשה ו' עם דגש).
+#
+# 2. אם התנועה חטופה, יש ללחוץ גם על shift, ולכן "חטף סגול" הוא "X".
+#
+# 3. לשווא ולרפה ניתנו סימנים הדומים מבחינה ויזואלית לסימן.
+
+':' 05B0	# HEBREW POINT SHEVA
+'X' 05B1	# HEBREW POINT HATAF SEGOL
+'P' 05B2	# HEBREW POINT HATAF PATAH
+'E' 05B3	# HEBREW POINT HATAF QAMATS
+'h' 05B4	# HEBREW POINT HIRIQ
+'m' 05B5	# HEBREW POINT TSERE
+'x' 05B6	# HEBREW POINT SEGOL
+'p' 05B7	# HEBREW POINT PATAH
+'e' 05B8	# HEBREW POINT QAMATS
+'j' 05B9	# HEBREW POINT HOLAM
+'u' 05BB	# HEBREW POINT QUBUTS
+'s' 05BC	# HEBREW POINT DAGESH OR MAPIQ (or shuruq)
+'~' 05BF	# HEBREW POINT RAFE
+'a' 05C1	# HEBREW POINT SHIN DOT
+'A' 05C2	# HEBREW POINT SIN DOT
+'?' 05BD	# HEBREW POINT METEG
+
+# Cantillation marks
+
+# אם אתה משתמש בטעמי המקרא, שייך להם מקשים כרצונך.
+
+'?' 0591	# HEBREW ACCENT ETNAHTA
+'?' 0592	# HEBREW ACCENT SEGOL
+'?' 0593	# HEBREW ACCENT SHALSHELET
+'?' 0594	# HEBREW ACCENT ZAQEF QATAN
+'?' 0595	# HEBREW ACCENT ZAQEF GADOL
+'?' 0596	# HEBREW ACCENT TIPEHA
+'?' 0597	# HEBREW ACCENT REVIA
+'?' 0598	# HEBREW ACCENT ZARQA
+'?' 0599	# HEBREW ACCENT PASHTA
+'?' 059A	# HEBREW ACCENT YETIV
+'?' 059B	# HEBREW ACCENT TEVIR
+'?' 059C	# HEBREW ACCENT GERESH
+'?' 059D	# HEBREW ACCENT GERESH MUQDAM
+'?' 059E	# HEBREW ACCENT GERSHAYIM
+'?' 059F	# HEBREW ACCENT QARNEY PARA
+'?' 05A0	# HEBREW ACCENT TELISHA GEDOLA
+'?' 05A1	# HEBREW ACCENT PAZER
+'?' 05A3	# HEBREW ACCENT MUNAH
+'?' 05A4	# HEBREW ACCENT MAHAPAKH
+'?' 05A5	# HEBREW ACCENT MERKHA
+'?' 05A6	# HEBREW ACCENT MERKHA KEFULA
+'?' 05A7	# HEBREW ACCENT DARGA
+'?' 05A8	# HEBREW ACCENT QADMA
+'?' 05A9	# HEBREW ACCENT TELISHA QETANA
+'?' 05AA	# HEBREW ACCENT YERAH BEN YOMO
+'?' 05AB	# HEBREW ACCENT OLE
+'?' 05AC	# HEBREW ACCENT ILUY
+'?' 05AD	# HEBREW ACCENT DEHI
+'?' 05AE	# HEBREW ACCENT ZINOR
+'?' 05AF	# HEBREW MARK MASORA CIRCLE
+
+#####################################
+# BIDI Formatting Codes
+#####################################
+
+'>' 200E	# LEFT-TO-RIGHT MARK
+'<' 200F	# RIGHT-TO-LEFT MARK
+'[' 202A	# LEFT-TO-RIGHT EMBEDDING
+']' 202B	# RIGHT-TO-LEFT EMBEDDING
+'\' 202C	# POP DIRECTIONAL FORMATTING
+'{' 202D	# LEFT-TO-RIGHT OVERRIDE
+'}' 202E	# RIGHT-TO-LEFT OVERRIDE
+
+####################################
+# Punctuation
+####################################
+
+'-' 05BE	# HEBREW PUNCTUATION MAQAF
+''' 05F3	# HEBREW PUNCTUATION GERESH
+'"' 05F4	# HEBREW PUNCTUATION GERSHAYIM
+
+'?' 2010	# HYPHEN
+'?' 2011	# NON-BREAKING HYPHEN
+'?' 2013	# EN DASH
+'?' 2014	# EM DASH
+'?' 2018	# LEFT SINGLE QUOTATION MARK
+'?' 2019	# RIGHT SINGLE QUOTATION MARK
+'?' 201A	# SINGLE LOW-9 QUOTATION MARK
+'?' 201B	# SINGLE HIGH-REVERSED-9 QUOTATION MARK
+'?' 201C	# LEFT DOUBLE QUOTATION MARK
+'?' 201D	# RIGHT DOUBLE QUOTATION MARK
+'?' 201E	# DOUBLE LOW-9 QUOTATION MARK
+'?' 201F	# DOUBLE HIGH-REVERSED-9 QUOTATION MARK
+'?' 2212	# MINUS SIGN
+
+####################################
+# Misc
+####################################
+
+'*' 2022	# BULLET
+'_' 0332	# NON-SPACING UNDERSCORE
+'^' 203E	# OVERLINE
+ 0D 2028	# LINE SEPARATOR
+'?' 2029	# PARAGRAPH SEPARATOR
+' ' 00A0	# NO-BREAK SPACE
+
+# Numbers are mapped to box-drawing characters. Use the numeric keypad.
+
+'1' '└'
+'2' '┴'
+'3' '┘'
+'4' '│'
+'5' '┼'
+'6' '│'
+'7' '┌'
+'8' '┬'
+'9' '┐'
+
+# Alternative rounded corners
+#'7' '╭'
+#'9' '╮'
+#'1' '╰'
+#'3' '╯'
+
+# Uncomment the following if you want numbers to map to superscripts.
+
+#'0' 2070	# SUPERSCRIPT ZERO
+#'1' 00B9	# SUPERSCRIPT ONE
+#'2' 00B2	# SUPERSCRIPT TWO
+#'3' 00B3	# SUPERSCRIPT THREE
+#'4' 2074	# SUPERSCRIPT FOUR
+#'5' 2075	# SUPERSCRIPT FIVE
+#'6' 2076	# SUPERSCRIPT SIX
+#'7' 2077	# SUPERSCRIPT SEVEN
+#'8' 2078	# SUPERSCRIPT EIGHT
+#'9' 2079	# SUPERSCRIPT NINE
+
+'$' 20AA	# NEW SHEQEL SIGN
+ 23 20AC	# EURO SIGN
+
+'S' 00A7	# SECTION SIGN
+'?' 00B6	# PILCROW/PARAGRAPH SIGN
+'J' 30C1	# Arbitrary Japanese letter, just for testing double-width terminals.
+
+'?' '?'

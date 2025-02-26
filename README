@@ -1,0 +1,58 @@
+Geresh is a simple multi-lingual text editor for text terminals.
+
+Installation instructions are detailed in the INSTALL file.
+
+Main features:
+
+* Unicode support
+
+* Works with UTF-8 terminals (and with non-UTF-8 terminals)
+
+* Wide-characters and combining-characters support
+
+* BiDi support (using the FriBiDi library)
+
+* Editing of BiDi formatting codes
+
+* An intelligent algorithm for determining paragraphs direction.
+
+* Arabic shaping, Lam-Alif ligatures, Harakat.
+
+* Alternative display of Hebrew points and maqaf; Hebrew keyboard emulation.
+
+* Can be used as a filter to output a visual representation of the logical
+  input (similar to "bidiv").
+
+* Recognizes (and displays) different line-ends: Unix (LF), Mac (CR),
+  Dos/Windows (CR+LF), Unicode PS, Unicode LS.
+
+* Speller support (supports the ispell-a protocol)
+
+* Undo / redo
+
+* Copy / cut / paste
+
+* Pipes
+
+* Several wrap policies + auto-justify
+
+* Optional iconv support
+
+* Auto-detects UTF-8/16/32 encoded files.
+
+* Can run in UTF-8 or 8-bit locales. Can also run on systems that have
+  neither UTF-8 nor ISO-8859-8 locales.
+
+* Syntax highlighting for HTML, Email, *text* and _text_
+
+* Help system: a comprehensive User Manual (in Hebrew) and a "Describe Key"
+  function (a la emacs).
+
+* Pull-down menu, scrollbar
+
+* Themes (aka "color schemes")
+
+* And more!
+
+Installation instructions are detailed in the INSTALL file.
+

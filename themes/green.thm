@@ -1,0 +1,34 @@
+#
+# Title: Old ~green monitor
+# Version: 0.6.1
+#
+
+menu = green, black
+menu.selected = black, green
+menu.letter = brightgreen
+menu.letter.selected = gray
+menu.indicator = brightgreen
+menu.indicator.selected = gray
+menubar = brightgreen
+
+edit = green, black
+
+scrollbar.thumb = black, green
+
+edit.eop = red
+edit.tab = red
+edit.explicit-bidi = bold
+edit.maqaf = bold
+edit.nsm = bold
+edit.control = bold
+edit.failed-conversion = brightred
+edit.trim = bold
+edit.wrap = bold
+
+edit.selected = reverse, +bold
+edit.html-tag = bold
+edit.email-quote1 = bold
+# Note: in the following we use 'bold' too, because the
+# console can't show underline.
+edit.emphasized = underline, +bold
+

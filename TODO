@@ -1,0 +1,58 @@
+HIGH PRIORITY
+=============
+
+- auto-justify is extremely lousy. I must fix that. should support
+  numbered/bulleted items, ">" quotes, two spaces after a dot, etc
+  etc etc.
+
+
+LOWER PRIORITY
+==============
+
+- Emacs:
+    - a kill/clipboard ring [distinct from the clipboard?]
+    - shouldn't M-d, M-backspace cut to clipboard as C-k does?
+    - key-bindings (C-_, C-w, C-y, M-y, etc.)
+
+- bookmarks? (save/restore cursor position). Thankfully, C-o now
+  alleviates the need a bit.
+
+- better Find/Replace.
+
+- add 'bidiv' directionality algo? there's the bigger issue of
+  "paragraphs vs lines" and how to define a paragraph.
+
+- ncursesw has an NSM bug at the rightmost column... (but it seems
+  I can do nothing about it).
+
+- shared clipboard?
+
+- (console only) big cursor: always, or when alt-kbd is on/off.
+
+
+I DON'T THINK I'LL EVER DO THESE
+================================
+
+- C-^ to switch to previous file a la vim? And maybe a "recent
+  files" submenu?
+
+- file browser?
+
+- cygwin/autoconf: check why some of the linking tests don't work on
+  my cygwin.
+
+- ^Z (suspend) when speller is loaded: investigate? (ignoring SIGTSTP
+  in forked child solved this problem, so I can close this item).
+
+- using pipes (opening "!date") when speller is loaded: investigate?
+  (the speller is unloaded when doing pipes, so I can close this item).
+
+- optionally store chars as UCS-2 ?
+
+- speller: fix UTF-8 offsets? (it's not necessary)
+
+- line numbering? --is it useful? for one, it can solve ncursesw's
+  NSM bug.
+
+- "follow symbolic links", etc.
+

@@ -1,0 +1,50 @@
+#
+# Title: ~Occult (transparent)
+# Version: 0.6.1
+#
+# This theme might look cool with some marble picture at the background.
+#
+
+menu = red, black
+menu.frame = brightred
+menu.selected = brightred, black
+menu.letter = yellow
+menu.indicator = red
+statusline = brightred, black
+dialogline = red, black
+
+edit = default, default
+
+scrollbar = red, black
+scrollbar.thumb = black, red
+
+# uncomment the following lines if you dont like reddish scrollbar.
+#scrollbar = ,
+#scrollbar.thumb = reverse
+
+# If you're using some background picture, you might want to uncomment
+# the following to make the text more readable.
+#edit = white, default
+
+edit.eop = red
+edit.tab = red
+edit.explicit-bidi = magenta
+edit.maqaf = brightmagenta
+edit.nsm = brightmagenta
+edit.nsm.hebrew = green
+edit.nsm.cantillation = blue
+edit.nsm.arabic = brown
+edit.unicode-ls = green
+edit.wide = brightmagenta
+edit.control = yellow
+edit.failed-conversion = brightmagenta
+edit.trim = bold
+edit.wrap = bold
+
+edit.selected = reverse, +bold
+edit.html-tag = bold
+edit.email-quote1 = bold
+# Note: in the following we use 'bold' too, because the
+# console can't show underline.
+edit.emphasized = underline, +bold
+

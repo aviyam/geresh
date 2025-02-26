@@ -1,0 +1,43 @@
+#
+# Title: ~Arnold's "girlie men"
+# Version: 0.6.1
+#
+
+menu = white, blue
+# uncomment the following if you don't like bold text
+#menu = lightgray, blue
+menu.frame = yellow
+menu.frame = magenta
+menu.selected = , black
+menu.selected = white, cyan
+menu.letter = yellow
+menu.indicator = brightred
+
+edit = white, magenta # chg
+
+# uncomment the following if you don't like bold text
+#edit = lightgray, magenta
+
+edit.eop = red
+edit.tab = red
+edit.explicit-bidi = magenta
+edit.maqaf = yellow		# chg
+edit.nsm = brightmagenta
+edit.nsm.hebrew = green
+edit.nsm.cantillation = blue
+edit.nsm.arabic = brown
+edit.unicode-ls = green
+edit.wide = brightmagenta
+edit.control = yellow
+edit.failed-conversion = brightmagenta
+edit.trim = bold
+edit.wrap = bold
+
+edit.selected = black, cyan     # chg
+edit.html-tag = brightgreen     # chg
+edit.email-quote1 = brightgreen # chg
+edit.email-quote2 = yellow      # chg
+edit.email-quote3 = brightcyan  # chg
+edit.email-quote4 = brightblue  # chg
+
+edit.emphasized = yellow, +underline # chg

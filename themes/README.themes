@@ -1,0 +1,86 @@
+THE FORMAT OF THEME FILES
+-------------------------
+
+A theme is a collection of attributes of various UI elements. Each 
+theme is contained in a file with a "thm" extension.
+
+Each line of a theme file, unless blank or preceded with "#" (which 
+makes it a comment), is of the syntax:
+
+  element_name = [fg_color | special] [, bg_color | special] [, special]
+
+"color" may be any of:
+
+  black      gray
+  red        brightred
+  green      brightgreen
+  brown      yellow
+  blue       brightblue
+  magenta    brighmagenta
+  cyan       brightcyan
+  lightgray  white
+
+(Because of terminal restrictions, those in the second column cannot 
+serve as background colors).
+
+"special" may be any of
+
+  bold		+bold
+  underline	+underline
+  reverse	+reverse
+  normal
+  default
+
+"default" stands for the default color of the terminal. This can be 
+either the foreground or the background color, depending on where it's 
+used.
+
+There are tens of elements, but thanks to an inheritance mechanism it's 
+only necessary to specify few of them. Those elements not specified in a 
+theme file inherit their attributes from a predetermined "parent" 
+element. This inheritance also takes place when only a background (or a 
+foreground) color is missing.
+
+The following is a list of the available UI elements and their descriptions.
+The indentations show the hierarchical structure of the inheritance.
+
+menu						pull-down menu color
+ menu.frame					menu frames
+ menu.selected					selected menu item
+ menu.letter					item hot key
+  menu.letter.selected (bg: menu.selected)	item hot key, when selected
+ menu.indicator					menu indicators
+  menu.indicator.selected (bg: menu.selected)	menu indicators, selected
+ menubar					menubar
+  scrollbar.thumb				the thumb of the scrollbar
+  statusline					the status-line
+
+edit						the main edit box
+ dialogline					the dialog-line
+ scrollbar					the scrollbar
+ edit.failed-conversion				characters not represented
+						in screen encoding.
+ edit.control					control characters
+						(usually U+0000 to U+0031)
+ edit.eop					end of paragraph symbol
+  edit.unicode-ls				Unicode line separator
+  edit.tab					tab characters
+ edit.explicit-bidi				explicit bidi marks
+  edit.maqaf					Hebrew maqaf, when highlighted
+  edit.nsm					non spacing marks (NSM)
+   edit.nsm.hebrew				Hebrew NSM (niqqud)
+    edit.nsm.cantillation			cantillation marks
+   edit.nsm.arabic				Arabic NSM (harakat)
+   edit.wide					wide Asian characters
+ edit.trim					the trim symbol ("$")
+  edit.wrap					the wrap symbol ("\")
+ edit.selected					selected text
+ edit.html-tag					highlighted HTML tags
+ edit.emphasized				highlighted *text* and _text_
+  edit.links					links in the User Manual
+ edit.email-quote1				email quotes, level 1
+  edit.email-quote2				email quotes, level 2
+   edit.email-quote3				email quotes, level 3
+    ...						...
+     edit.email-quote9				email quotes, level 9
+

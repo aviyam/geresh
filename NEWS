@@ -1,0 +1,108 @@
+2004-10-13  VERSION 0.6.3
+
+- The help viewer (accessible via the F1 key) now supports hypertext,
+  making it _much_ easier to navigate the User Manual.
+
+- The User Manual was organized a bit. 
+
+- A new command, "Launch external editor", F8, under the "File"
+  menu, allows the user to edit the file using his favorite editor.
+  The cursor position is passed to the external editor, and when
+  using Vim it's also read back. See the manual for details on this
+  "magic".
+
+- C-k now cuts to clipboard (a la emacs).
+
+- Quotes in email messages are ignored when spell-checking (only
+  when syntax == email).
+
+- Filename completeion with TAB is much faster now (stat(2) used only
+  when needed).
+
+- README.themes was update.
+
+- Cantillations (Ta'amei HaMikra) and Arabic vowels were added to the
+  "Insert a Unicode character from the list" submenu.
+
+- Minor improvements.
+
+2004-09-23  VERSION 0.6.1
+
+- Themes (see the "Color schemes" submenu under "Dispaly").
+
+- I've applied Baruch's (@tkos.co.il) patch. This solves a C++
+  compilation problem on some newer systems.
+
+- The encoding submenu was extended with various Cyrillic and Unicode
+  encodings (plus a "Set the default encoding" submenu).
+
+- A new command: C-o (or M-o, in case your Midnight Commander masks
+  it) to jump to the place where the last editing operation took
+  place. It's a bit like Vim's C-o.
+
+- The 'Search' command is a bit friendlier now (it shares the kbd
+  language with the main editing box, and first alpha letter erases
+  contents).
+
+- Syntax highlighting: _text_ and *text* now shows on the console too
+  (it didn't, because the console couldn't show A_UNDERLINE). It's now
+  possible to specify different colors for different levels of quotes
+  in mail messages (see 'edit.email-quoteN' in mc.thm).
+
+- Fixed: you can now do ^Z when the speller is loaded.
+
+- Minor improvements.
+
+2004-08-02  VERSION 0.6.0
+
+- Syntax highlighting for HTML and emails
+
+- Highlighting for *text* and _text_
+
+- Visual/logical cursor movement
+
+- Spell-checking with Hspell now works out-of-the-box.
+  No need to configure anything.
+
+- A new base-directionality algorithm (contextual-*),
+  so Geresh now has a total of five.
+
+- A new sub-menu: "Insert a Unicode character from the list"
+
+- Improved several menus. Direct link to the User Manual from some of them.
+
+- Minor improvements
+
+2004-06-17  VERSION 0.5.0
+
+- Pull-down menu
+
+- Scrollbar
+
+- Better Arabic's harakat support
+
+- Minor improvements
+
+2003-07-16  VERSION 0.4.1
+
+- Fixed a 8-bit locale problem (seems like an ncursesw bug).
+
+2003-07-10  VERSION 0.4.0
+
+- Speller support (using the ispell-a protocol)
+
+- Geresh can now be used as a filter to convert logical to visual
+  (similar to "bidiv", but better).
+
+2003-03-09  VERSION 0.0.3
+
+- event.cc: 8-bit locale kbd handling fixed.
+
+2003-03-04  VERSION 0.0.2
+
+- Minor changes to configure.in. fixed a quoting bug.
+
+2003-02-25  VERSION 0.0.1
+
+- Initial public release.
+

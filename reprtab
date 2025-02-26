@@ -1,0 +1,121 @@
+# This file contains representations for some characters and concepts.
+
+0009 '·' # TAB
+05BE '-' # MAQAF
+2028 '\' # UNICODE LINE SEPARATOR
+
+200E '>' # LRM
+200F '<' # RLM
+202A '[' # LRE
+202B ']' # RLE
+202C '\' # PDF
+202D '{' # LRO
+202E '}' # RLO
+
+# Hebrew points
+
+# תנועות קטנות (קצרות) או חטופות קיבלו אות אנגלית קטנה; תנועות גדולות
+# (ארוכות) קיבלו אות אנגלית גדולה. למשל, חולם היא תנועה גדולה, לכן O,
+# ואילו חטף קמץ היא תנועה חטופה ולכן o.
+#
+# לרוע המזל, בשיטה הזו אי אפשר להבדיל בין חטף סגול לבין סגול ובין חטף
+# פתח לבין פתח, לכן חטף סגול מיוצג ^ (=שלוש נקודות מחוברות) וחטף פתח _.
+#
+# זכור שתמיד תוכל ללחוץ C-M-i כדי לקרוא את תיאור התו.
+
+05B0 ':' # HEBREW POINT SHEVA
+05B1 '^' # HEBREW POINT HATAF SEGOL
+05B2 '_' # HEBREW POINT HATAF PATAH
+05B3 'o' # HEBREW POINT HATAF QAMATS
+05B4 'i' # HEBREW POINT HIRIQ
+05B5 'E' # HEBREW POINT TSERE
+05B6 'e' # HEBREW POINT SEGOL
+05B7 'a' # HEBREW POINT PATAH
+05B8 'A' # HEBREW POINT QAMATS
+05B9 'O' # HEBREW POINT HOLAM
+05BB 'u' # HEBREW POINT QUBUTS
+05BC '*' # HEBREW POINT DAGESH OR MAPIQ (or shuruq)
+05BD '|' # HEBREW POINT METEG
+05BF '~' # HEBREW POINT RAFE
+05C1 's' # HEBREW POINT SHIN_DOT
+05C2 'z' # HEBREW POINT SIN_DOT
+05C4 '.' # HEBREW POINT UPPER_DOT
+
+0332 '_' # NON-SPACING UNDERSCORE
+
+# Cantillation marks
+
+# אם אתה משתמש בטעמי המקרא, ייצג אותם כרצונך. העורך מציג אותם בצבע שונה
+# מסימני הניקוד, ולכן תוכל לנצל שוב תווים שכבר השתמשת בהם.
+
+0591 'c' # HEBREW ACCENT ETNAHTA
+0592 'c' # HEBREW ACCENT SEGOL
+0593 'c' # HEBREW ACCENT SHALSHELET
+0594 'c' # HEBREW ACCENT ZAQEF QATAN
+0595 'c' # HEBREW ACCENT ZAQEF GADOL
+0596 'c' # HEBREW ACCENT TIPEHA
+0597 'c' # HEBREW ACCENT REVIA
+0598 'c' # HEBREW ACCENT ZARQA
+0599 'c' # HEBREW ACCENT PASHTA
+059A 'c' # HEBREW ACCENT YETIV
+059B 'c' # HEBREW ACCENT TEVIR
+059C 'c' # HEBREW ACCENT GERESH
+059D 'c' # HEBREW ACCENT GERESH MUQDAM
+059E 'c' # HEBREW ACCENT GERSHAYIM
+059F 'c' # HEBREW ACCENT QARNEY PARA
+05A0 'c' # HEBREW ACCENT TELISHA GEDOLA
+05A1 'c' # HEBREW ACCENT PAZER
+05A3 'c' # HEBREW ACCENT MUNAH
+05A4 'c' # HEBREW ACCENT MAHAPAKH
+05A5 'c' # HEBREW ACCENT MERKHA
+05A6 'c' # HEBREW ACCENT MERKHA KEFULA
+05A7 'c' # HEBREW ACCENT DARGA
+05A8 'c' # HEBREW ACCENT QADMA
+05A9 'c' # HEBREW ACCENT TELISHA QETANA
+05AA 'c' # HEBREW ACCENT YERAH BEN YOMO
+05AB 'c' # HEBREW ACCENT OLE
+05AC 'c' # HEBREW ACCENT ILUY
+05AD 'c' # HEBREW ACCENT DEHI
+05AE 'c' # HEBREW ACCENT ZINOR
+05AF 'c' # HEBREW MARK MASORA CIRCLE
+
+# Arabic harakats
+
+0x064B 'A' # ARABIC FATHATAN
+0x064C 'U' # ARABIC DAMMATAN
+0x064D 'I' # ARABIC KASRATAN
+0x064E 'a' # ARABIC FATHA
+0x064F 'u' # ARABIC DAMMA
+0x0650 'i' # ARABIC KASRA
+0x0651 '*' # ARABIC SHADDA
+0x0652 ':' # ARABIC SUKUN
+0x0670 '|' # ARABIC LETTER SUPERSCRIPT ALEF
+
+#
+# ALL OF THE FOLLOWING ARE PSEUDO CHARACTERS
+#
+
+'?' '?' # CHARACTER NOT IN TERMINAL CHARSET
+'^' '^' # CONTROL CHARACTER (ASCII 0..31)
+''' ''' # NON SPACING MARK
+'A' 'A' # WIDE CHARACTERS (E.G. ASIAN IDEOGRAPHS)
+
+#
+# VISUAL INDICATORS
+#
+
+'$' '$' # LINE IS TRIMMED
+'/' '/' # LINE IS WRAPPED (RTL)
+'\' '\' # LINE IS WRAPPED (LTR)
+
+#
+# PARAGRAPH ENDINGS
+#
+
+'¶' '¶' # UNICODE PARAGRAPH SEPARATOR
+'µ' 'µ' # DOS LINE END (CR+LF)
+'«' '«' # UNIX LTR LINE END (LF)
+'»' '»' # UNIX RTL LINE END (LF)
+'@' '@' # MAC LINE END (CR)
+'¬' '¬' # NO LINE END
+

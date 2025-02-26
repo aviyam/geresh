@@ -1,0 +1,40 @@
+#
+# Title: ~Black & White (transparent)
+# Version: 0.6.1
+#
+# This is the default theme for terminals that don't support colors.
+#
+# ("Black & White" is a misnomer, because there aren't any colors here.
+# It's all transparent.)
+#
+# PLEASE DON'T USE COLORS IN THIS FILE (NOT EVEN "BLACK" AND "WHITE") OR
+# ELSE GERESH WILL FAIL TO LOAD WHEN YOU RUN IT ON NON-COLOR TERMINALS.
+#
+
+menu = reverse
+menu.selected = normal
+menu.letter = normal
+menu.indicator = reverse
+menu.indicator.selected = normal
+
+edit = normal
+
+edit.eop = normal
+edit.tab = normal
+edit.explicit-bidi = bold
+edit.maqaf = bold
+edit.nsm = bold
+edit.nsm.hebrew = bold
+edit.nsm.cantillation = bold
+edit.nsm.arabic = bold
+edit.unicode-ls = bold
+edit.wide = bold
+edit.control = bold
+edit.failed-conversion = bold
+edit.trim = bold
+edit.wrap = bold
+
+edit.selected = reverse
+edit.html-tag = bold
+edit.email-quote1 = bold
+edit.emphasized = underline, +bold

@@ -1,0 +1,75 @@
+#ifndef BDE_CONFIG_H
+#define BDE_CONFIG_H
+
+#undef PACKAGE
+#undef VERSION
+
+// enable debugging messages?
+#undef DEBUG
+
+#undef HAVE_NCURSESW_NCURSES_H
+
+#undef HAVE_NCURSES_H
+
+// are we using wide-curses?
+#undef HAVE_WIDE_CURSES
+
+// do we have nl_langinfo(), CODESET?
+#undef HAVE_LANGINFO_CODESET
+
+#undef HAVE_LOCALE_H
+
+#undef HAVE_SETLOCALE
+
+// use GNU's gettext?
+#undef USE_GETTEXT
+
+// does our curses support colors?
+#undef HAVE_COLOR
+
+// do we have the use_default_colors() non-standard function?
+#undef HAVE_USE_DEFAULT_COLORS
+
+// can we change cursor visibility with curs_set()?
+#undef HAVE_CURS_SET
+
+// wctob() is for 8-bit locales
+#undef HAVE_WCTOB
+
+// btowc() is for 8-bit locales
+#undef HAVE_BTOWC
+
+// can we parse long command-line arguments?
+#undef HAVE_GETOPT_LONG
+
+// use iconv for charset conversion?
+#undef USE_ICONV
+
+// iconv()'s declaration has "const" for the second argument?
+#undef ICONV_CONST
+
+// what is iconv's name of our internal encoding?
+#undef INTERNAL_ENCODING
+
+// default file encoding
+#undef DEFAULT_FILE_ENCODING
+
+// DIR and dirent
+#undef HAVE_DIRENT_H
+
+#undef HAVE_SYS_NDIR_H
+
+#undef HAVE_SYS_DIR_H
+
+#undef HAVE_NDIR_H
+
+#undef mode_t
+
+#undef RETSIGTYPE
+
+#undef HAVE_VSNPRINTF
+
+#undef HAVE_VASPRINTF
+
+#endif
+

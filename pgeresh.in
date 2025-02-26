@@ -1,0 +1,16 @@
+#!/bin/sh
+
+TMPFL=
+
+if ! tty -s; then
+    TMPFL=`mktemp /tmp/geresh.XXXXXX` || TMPFL=/tmp/geresh.$$
+    cat > $TMPFL
+fi
+
+geresh $TMPFL "$@" </dev/tty >/dev/tty
+
+if ! tty -s <&1; then
+    cat $TMPFL
+fi
+
+[ -n "$TMPFL" ] && rm -f $TMPFL

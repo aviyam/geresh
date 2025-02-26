@@ -1,0 +1,114 @@
+REQUIREMENTS
+------------
+
+The minimum requirements for installing Geresh, besides a standard C++
+compiler, are the following two libraries:
+
+    * FriBiDi
+
+	Available at:
+	    <http://fribidi.sourceforge.net>
+
+    * curses (or ncurses)
+    
+However, you'll probably want to have two additional libraries which Geresh
+optionally use:
+
+    * ncursesw
+    
+	This is curses with wchar_t support, as outlined in the X/Open
+	standard.
+
+	THIS LIBRARY IS MANDATORY FOR RUNNING GERESH IN THE UTF-8 LOCALE.
+	
+	Available at:
+	
+	    <http://www.gnu.org/software/ncurses/ncurses.html>
+	
+	You MUST configure it with "--enable-widec", or else it won't
+	generate the appropriate libraries (libncursesw.so, etc).
+	
+    * iconv
+    
+	If you want Geresh to recognize a broad range of encodings when it
+	loads and saves files, make sure your system has the iconv
+	functions.
+
+	Contemporary glibc libraries have the iconv implementation
+	built-in, but if you're using an older system, or a non-glibc
+	system, you can install libiconv separately:
+
+            <http://www.gnu.org/software/libiconv/>
+
+IMPORTANT: If you want to run Geresh in the UTF-8 locale, you must install
+ncursesw. If you don't compile Geresh against ncursesw then it will print an
+error message and abort when it finds out it's running in the UTF-8 locale.
+
+INSTALLING
+----------
+
+Like most packages nowadays, Geresh comes with a "configure" script. This
+script tries to automatically determine your system capabilities. Type
+"configure --help" to learn more. In most cases you'll just do
+"./configure", then "make", then "make install" (the latter as root).
+
+When "configure" finishes it prints a short summary of what it has found on
+your system. A sample printout:
+
+      " 
+	Results:
+	--------
+	curses library:            ncursesw
+	use iconv:                 yes
+	default file encoding:     CP1255
+	(debugging support:        no)
+					"
+Please pay attention to what "configure" prints. In particular, note the "w"
+in "ncursesw". If "configure" doesn't find ncursesw, it configures Geresh to
+use ncurses or plain curses, and prints a warning saying you won't be able
+to run Geresh in the UTF-8 locale.
+
+PROBLEMS
+--------
+
+Please email me if you encounter any problems installing Geresh.
+
+TESTING
+-------
+
+When you start Geresh you may see question marks or gibberish instead of
+Hebrew characters. There may be three reasons for that:
+
+1. You're using a ISO-8859-{1,15} or other locale (like "POSIX") in which
+   Hebrew characters do not exist (solution: either change the locale or
+   use the "--iso88598-term" option); or
+2. Your screen font doesn't have Hebrew glyphs; or:
+3. The locale (e.g. iso-8859-x) and the terminal (e.g. UTF-8) disagree about
+   the encoding. For example, if you see lots of "x"s printed, it probably
+   means you're in the UTF-8 locale, but your terminal was not sent the
+   'unicode_start' escape sequence.
+
+INSTALLING FRIBIDI AND NCURSESW LOCALLY
+---------------------------------------
+
+You don't have to have root permissions to install ncursesw and/or fribidi.
+You can install them in your home directory, say "/home/mooffie/local".
+Then, to configure Geresh, type:
+
+$ export FRIBIDI_CONFIG=/path/to/fribidi-config
+$ ./configure --with-curses=/home/mooffie/local
+
+SUPPORTED PLATFORMS
+-------------------
+
+Geresh has been compiled and tested under the following UNIX-like operating
+systems:
+
+[x86] Linux RedHat 7.3 (Kernel 2.4)
+[x86] FreeBSD Release 4.6
+[x86] Linux Mandrake 8.3 (Kernel 2.4)
+[x86] Cygwin (Windows 98)
+
+(Some linking tests the configure script does failed on Cygwin, but that's
+probably a problem with my own system.)
+

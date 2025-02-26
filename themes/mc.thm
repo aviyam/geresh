@@ -1,0 +1,39 @@
+#
+# Title: ~Midnight Commander
+# Version: 0.6.1
+#
+
+menu = white, cyan
+menu.frame = black
+menu.selected = , black
+menu.letter = yellow
+menu.indicator = red
+menubar = black
+
+edit = lightgray, blue # chg
+
+edit.eop = red
+edit.tab = red
+edit.explicit-bidi = magenta
+edit.maqaf = brightmagenta
+edit.nsm = brightmagenta
+edit.nsm.hebrew = green
+edit.nsm.cantillation = blue
+edit.nsm.arabic = brown
+edit.unicode-ls = green
+edit.wide = brightmagenta
+edit.control = yellow
+edit.failed-conversion = brightmagenta
+edit.trim = bold
+edit.wrap = bold
+
+edit.selected = black, cyan   # chg
+edit.html-tag = brightgreen   # chg
+edit.email-quote1 = green     # chg
+edit.email-quote2 = brightred # chg
+edit.email-quote3 = cyan      # chg
+edit.email-quote4 = brown     # chg
+
+# Note: in the following we use 'bold' too, because the
+# console can't show underline.
+edit.emphasized = underline, +bold

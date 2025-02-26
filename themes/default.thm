@@ -1,0 +1,37 @@
+#
+# Title: Default (transparent)
+# Version: 0.6.1
+#
+# This is the default theme for color terminals.
+#
+
+menu = white, cyan
+menu.frame = black
+menu.selected = , black
+menu.letter = yellow
+menu.indicator = red
+menubar = black
+
+edit = default, default
+
+edit.eop = red
+edit.tab = red
+edit.explicit-bidi = magenta
+edit.maqaf = brightmagenta
+edit.nsm = brightmagenta
+edit.nsm.hebrew = green
+edit.nsm.cantillation = blue
+edit.nsm.arabic = brown
+edit.unicode-ls = green
+edit.wide = brightmagenta
+edit.control = yellow
+edit.failed-conversion = brightmagenta
+edit.trim = bold
+edit.wrap = bold
+
+edit.selected = reverse, +bold
+edit.html-tag = bold
+edit.email-quote1 = bold
+# Note: in the following we use 'bold' too, because the
+# console can't show underline.
+edit.emphasized = underline, +bold
