@@ -22,6 +22,7 @@
 #include "transtbl.h"
 #include "geresh_io.h" // set_last_error
 #include "dbg.h"
+#include <cstring>
 
 // Most of the code below deals with parsing a TranslationTable
 // file. Such files consist of lines of the form:
