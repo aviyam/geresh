@@ -18,6 +18,7 @@
 #define BDE_DISPATCHER_H
 
 #include "event.h"
+#include <cstring>
 
 // class Dispatcher represents a class that receives GUI events.
 
