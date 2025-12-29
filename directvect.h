@@ -48,9 +48,9 @@ public:
     size_type size() const { return vec.size(); }
     size_type capacity() const { return vec.capacity(); }
     bool empty() const { return vec.empty(); }
-    T* begin() { return &vec[0]; }
+    T* begin() { return vec.data(); }
     T* end() { return (begin() + size()); }
-    const T* begin() const { return &vec[0]; }
+    const T* begin() const { return vec.data(); }
     const T* end() const { return (begin() + size()); }
     T& operator[] (size_type n) { return vec[n]; }
     const T& operator[] (size_type n) const { return vec[n]; }

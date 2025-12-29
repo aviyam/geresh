@@ -27,7 +27,7 @@
 
 #include <map>
 
-#include "io.h"
+#include "geresh_io.h"
 #include "editbox.h"
 #include "converters.h"
 #include "dbg.h"

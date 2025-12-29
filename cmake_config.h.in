@@ -1,0 +1,70 @@
+#ifndef BDE_CONFIG_H
+#define BDE_CONFIG_H
+
+#cmakedefine PACKAGE "@PACKAGE@"
+#cmakedefine VERSION "@VERSION@"
+
+// enable debugging messages?
+#cmakedefine DEBUG 1
+
+#cmakedefine HAVE_NCURSESW_NCURSES_H 1
+#cmakedefine HAVE_NCURSES_H 1
+
+// are we using wide-curses?
+#cmakedefine HAVE_WIDE_CURSES 1
+
+// do we have nl_langinfo(), CODESET?
+#cmakedefine HAVE_LANGINFO_CODESET 1
+
+#cmakedefine HAVE_LOCALE_H 1
+#cmakedefine HAVE_SETLOCALE 1
+
+// use GNU's gettext?
+#cmakedefine USE_GETTEXT 1
+#define LOCALEDIR "@CMAKE_INSTALL_LOCALEDIR@"
+
+// does our curses support colors?
+#cmakedefine HAVE_COLOR 1
+
+// do we have the use_default_colors() non-standard function?
+#cmakedefine HAVE_USE_DEFAULT_COLORS 1
+
+// can we change cursor visibility with curs_set()?
+#cmakedefine HAVE_CURS_SET 1
+
+// wctob() is for 8-bit locales
+#cmakedefine HAVE_WCTOB 1
+
+// btowc() is for 8-bit locales
+#cmakedefine HAVE_BTOWC 1
+
+// can we parse long command-line arguments?
+#cmakedefine HAVE_GETOPT_LONG 1
+
+// use iconv for charset conversion?
+#cmakedefine USE_ICONV 1
+
+// iconv()'s declaration has "const" for the second argument?
+#define ICONV_CONST @ICONV_CONST@
+
+// what is iconv's name of our internal encoding?
+#define INTERNAL_ENCODING "@INTERNAL_ENCODING@"
+
+// default file encoding
+#define DEFAULT_FILE_ENCODING "@DEFAULT_FILE_ENCODING@"
+
+// DIR and dirent
+#cmakedefine HAVE_DIRENT_H 1
+#cmakedefine HAVE_SYS_NDIR_H 1
+#cmakedefine HAVE_SYS_DIR_H 1
+#cmakedefine HAVE_NDIR_H 1
+
+// mode_t might need definition on some weird systems, usually standard
+// #undef mode_t 
+
+#define RETSIGTYPE void
+
+#cmakedefine HAVE_VSNPRINTF 1
+#cmakedefine HAVE_VASPRINTF 1
+
+#endif

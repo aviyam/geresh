@@ -20,7 +20,7 @@
 #include <errno.h>
 
 #include "transtbl.h"
-#include "io.h" // set_last_error
+#include "geresh_io.h" // set_last_error
 #include "dbg.h"
 
 // Most of the code below deals with parsing a TranslationTable
@@ -66,7 +66,7 @@ static char *parse_next_char(char *s, unichar &ch)
 	unistring us;
 	us.init_from_utf8(s, end - s);
 	if (us.size() != 1)
-	    return false;
+	    return NULL;
 	ch = us[0];
 	return end + 1;
     } else {

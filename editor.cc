@@ -25,7 +25,7 @@
 #include "editor.h"
 #include "menus.h"
 #include "scrollbar.h"
-#include "io.h"
+#include "geresh_io.h"
 #include "pathnames.h"
 #include "themes.h"
 #include "utf8.h"   // used in show_character_code()

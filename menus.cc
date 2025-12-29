@@ -38,7 +38,7 @@
 
 #include <algorithm> // sort
 
-#include "io.h"     // get_cfg_filename
+#include "geresh_io.h"     // get_cfg_filename
 #include "pathnames.h"
 #include "menus.h"
 
@@ -567,7 +567,9 @@ bool MMPopupMenu::get_item_state(int id)
     case STT_FORMATMARKS:   return editbox->has_formatting_marks();
     case STT_CURSORREPORT:  return editor->is_cursor_position_report();
     case STT_READONLY:	    return editbox->is_read_only();
+#ifdef HAVE_CURS_SET
     case STT_BIGCURSOR:	    return editor->is_big_cursor();
+#endif
     case STT_GRAPHBOXES:    return terminal::graphical_boxes;
     case STT_KEYFORKEYUNDO: return editbox->is_key_for_key_undo();
     case STT_BIDI:	    return editbox->is_bidi_enabled();

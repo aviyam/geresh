@@ -1616,11 +1616,13 @@ void EditBox::log2vis(const char *options)
 	    opt_nopad = true;
 	if (strstr(options, "engpad"))
 	    opt_engpad = true;
-	char *s;
+	const char *s;
 	if ((s = strstr(options, "emph"))) {
 	    opt_emph = true;
 	    if (s[4] == ':') {
-		opt_emph_ch = strtol(s + 5, &s, 0);
+		char *endptr;
+		opt_emph_ch = strtol(s + 5, &endptr, 0);
+		s = endptr;
 		if (s && (*s == ':' || *s == ','))
 		    opt_emph_marker = strtol(s + 1, NULL, 0);
 	    }

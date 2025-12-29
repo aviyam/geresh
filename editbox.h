@@ -768,7 +768,7 @@ protected:
 			    int para_num
 			);
 
-    void EditBox::redraw_unwrapped_paragraph(
+    void redraw_unwrapped_paragraph(
 			    Paragraph &p,
 			    int window_start_line,
 			    bool only_cursor,
@@ -780,7 +780,7 @@ protected:
 			    bool eop_is_selected
 			);
 
-    void EditBox::redraw_wrapped_paragraph(
+    void redraw_wrapped_paragraph(
 			    Paragraph &p,
 			    int window_start_line,
 			    bool only_cursor,

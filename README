@@ -1,6 +1,25 @@
 Geresh is a simple multi-lingual text editor for text terminals.
 
-Installation instructions are detailed in the INSTALL file.
+Installation instructions:
+
+**Dependencies:**
+- CMake 3.14+
+- C++17 compiler (GCC, Clang, MSVC)
+- ncurses (ncursesw recommended for UTF-8)
+- fribidi
+- iconv
+- gettext (optional)
+
+**Building:**
+```bash
+mkdir build
+cd build
+cmake ..
+cmake --build .
+# To install:
+# sudo cmake --install .
+```
+
 
 Main features:
 

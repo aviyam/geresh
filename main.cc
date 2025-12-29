@@ -17,7 +17,7 @@
 #include <config.h>
 
 // Baruch says to put io.h first.
-#include "io.h"     // get_cfg_filename
+#include "geresh_io.h"     // get_cfg_filename
 #include "pathnames.h"
 #include "terminal.h"
 #include "editor.h"
@@ -281,7 +281,7 @@ int main(int argc, char *argv[])
      */
 
     ArgsList arguments;
-    arguments.push_back(PACKAGE); // push argv[0] (our program name)
+    arguments.push_back(const_cast<char*>(PACKAGE)); // push argv[0] (our program name)
 
     // Read arguments from the RC file.
     // first, read the RC file pointed to by $PACKAGE_RC.

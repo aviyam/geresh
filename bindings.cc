@@ -295,8 +295,10 @@ Editor::action_entry Editor::actions_table[] = {
 	    N_("Spell check the word on which the cursor stands")),
     ADD_ACTION(Editor, menu,
 	    N_("Activate menu")),
+#ifdef HAVE_CURS_SET
     ADD_ACTION(Editor, toggle_big_cursor,
 	    N_("Toogle big cursor (console only); useful if you're visually impaired")),
+#endif
     ADD_ACTION(Editor, toggle_graphical_boxes,
 	    N_("Use graphical characters for the menus and scrollbar")),
     ADD_ACTION(Editor, external_edit_prompt,

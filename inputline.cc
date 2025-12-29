@@ -40,7 +40,7 @@
 #include <map>
 
 #include "inputline.h"
-#include "io.h" // expand_tilde
+#include "geresh_io.h" // expand_tilde
 #include "themes.h"
 #include "dbg.h"
 

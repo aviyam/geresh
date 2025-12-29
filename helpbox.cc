@@ -18,7 +18,7 @@
 
 #include "helpbox.h"
 #include "editor.h"
-#include "io.h"
+#include "geresh_io.h"
 #include "pathnames.h"
 #include "themes.h"
 

@@ -1,0 +1,7 @@
+/Users/aviyam.fischer/code/geresh/build/CMakeFiles/geresh.dir
+/Users/aviyam.fischer/code/geresh/build/CMakeFiles/edit_cache.dir
+/Users/aviyam.fischer/code/geresh/build/CMakeFiles/rebuild_cache.dir
+/Users/aviyam.fischer/code/geresh/build/CMakeFiles/list_install_components.dir
+/Users/aviyam.fischer/code/geresh/build/CMakeFiles/install.dir
+/Users/aviyam.fischer/code/geresh/build/CMakeFiles/install/local.dir
+/Users/aviyam.fischer/code/geresh/build/CMakeFiles/install/strip.dir

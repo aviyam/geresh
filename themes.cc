@@ -1,6 +1,6 @@
 #include <config.h>
 
-#include "io.h"     // get_cfg_filename
+#include "geresh_io.h"     // get_cfg_filename
 #include "pathnames.h"
 #include "widget.h"
 #include "themes.h"
