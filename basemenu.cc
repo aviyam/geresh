@@ -18,6 +18,7 @@
 
 #include "basemenu.h"
 #include "themes.h"
+#include <cstring>
 
 ///////////////////////////// PopupMenu ////////////////////////////////////
 

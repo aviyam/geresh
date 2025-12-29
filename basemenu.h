@@ -2,6 +2,7 @@
 #define BDE_BASEMENU_H
 
 #include "widget.h"
+#include <cstring>
 
 struct MenuItem {
     const char *action;
